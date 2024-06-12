@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+    MicroservicePHP:
+       container_name: MicroservicePHP
+       image: diegorojas31/microservicephp
+       build: .
+       ports:
+         - "8000:8000"
+       depends_on:
+         - MicroserviceDB
+       env_file:
+         - .env
+
+    MicroserviceDB:
+       container_name: MicroserviceDB
+       image: postgres:12
+       environment:
+         POSTGRES_DB: postgres
+         POSTGRES_USER: postgres
+         POSTGRES_PASSWORD: secret
+       volumes:
+         - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
