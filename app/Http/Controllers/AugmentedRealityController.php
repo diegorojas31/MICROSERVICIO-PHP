@@ -12,7 +12,7 @@ class AugmentedRealityController extends Controller
         $url_photo = $request->url_photo;  // Asumiendo que la URL de la foto viene en este campo
         ini_set('max_execution_time', 300);
 
-        $pythonPath = base_path('CONVERTEROBJECT3D/venv/Scripts/python');
+        $pythonPath = base_path('CONVERTEROBJECT3D/venv/bin/python');
         $scriptPath = base_path('CONVERTEROBJECT3D/main.py');
 
         // Añade la URL de la foto como un argumento al comando
