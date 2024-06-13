@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['*','https://666b4386d8b72783a515ffb7--bright-buttercream-9a7a24.netlify.app/*'],
 
     'allowed_origins_patterns' => [],
 
