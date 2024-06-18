@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*','https://666b4386d8b72783a515ffb7--bright-buttercream-9a7a24.netlify.app/*','http://localhost:5173/*'],
+    'allowed_origins' => ['*','https://666b4386d8b72783a515ffb7--bright-buttercream-9a7a24.netlify.app/*','http://localhost:5173/*','http://vehicle-maintenance.s3-website-us-east-1.amazonaws.com/*'],
 
     'allowed_origins_patterns' => [],
 
