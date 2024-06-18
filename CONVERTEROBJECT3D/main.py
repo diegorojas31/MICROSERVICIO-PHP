@@ -13,7 +13,7 @@ sys.stdout = StdoutInterceptor(old_stdout.buffer, encoding='utf-8')
 if len(sys.argv) > 1:
     url_photo = sys.argv[1]  # Obtiene la URL de la foto desde los argumentos de la línea de comando
 
-client = Client("https://jiawei011-dreamgaussian.hf.space/--replicas/tx3jw/")
+client = Client("https://jiawei011-dreamgaussian.hf.space/--replicas/yv9wy/")
 result = client.predict(
     url_photo,  # Usa la URL obtenida de los argumentos
     True,
